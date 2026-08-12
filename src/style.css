@@ -1,0 +1,74 @@
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background-color: #FAFAF8;
+  font-family: 'Inter',sans-serif;
+}
+.add-ingredient-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  gap: 20px;
+
+}
+main{
+  padding: 10px 30px;
+}
+.Header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(236, 136, 100);
+  font-weight: bold;
+  font-size: 20px;
+  gap: 11px;
+  box-shadow: 0px 0px 10px;
+  box-sizing: border-box;
+  height: 100px;
+}
+.add-ingredient-form>input{
+  padding: 9px 13px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+  border: 1px solid #D1D5DB;
+  flex-grow: 1;
+  min-width: 120px;
+  max-width: 400px;
+  font-family: Inter ,sans-serif;
+}
+.add-ingredient-form>button{
+  min-width: 30px;
+  padding: 9px 35px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(236, 136, 100);
+  color: white;
+  box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.05);
+  font-family: Inter ,sans-serif;
+  font-size: 0.9rem;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.Header>h1{
+  min-width: 10px;
+}
+.Header>img{
+  min-width: 30px;
+}
+.add-ingredient-form>input:focus {
+  outline: none;
+  border: 1px solid rgba(236, 136, 100);;
+}
+.add-ingredient-form>button:hover{
+  background-color: white;
+  box-shadow: 0px 1px 2px 0px rgba(236, 136, 100);
+  color:rgb(236, 136, 100);
+}
+.add-ingredient-form>button:focus {
+  outline: none;
+  border: none;
+}
