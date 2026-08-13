@@ -1,15 +1,18 @@
+import React from "react"
+
 export default function Main(){
-  const ingredients = ["Chicken","Oregano","Tomatoes"]
+  const [ingredients,setingredients] = React.useState([])
   const ingredientElements = ingredients.map(ingredient=>
     <li key={ingredient}>{ingredient}</li>
     
   )
   function submitted(event){
+
     event.preventDefault()
     const formData = new FormData(event.currentTarget)
     const newIngredient = formData.get("ingredient")
-    ingredients.push(newIngredient)
-    console.log(ingredients)
+    setingredients(previngredient=>[...previngredient,newIngredient])
+    
   }
 
 
