@@ -29,7 +29,7 @@ export default function Main(){
         <button>+ Add ingredient</button>
       </form>
       <ul>
-        {ingredientElements}
+        
       </ul>
     </main>
   )
