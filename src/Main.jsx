@@ -12,6 +12,8 @@ export default function Main(){
     const formData = new FormData(event.currentTarget)
     const newIngredient = formData.get("ingredient")
     setingredients(previngredient=>[...previngredient,newIngredient])
+    event.currentTarget.reset()
+
     
   }
 
