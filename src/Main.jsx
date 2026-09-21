@@ -27,7 +27,7 @@ export default function Main(){
      {ingredients.length > 0 && <section>
     <h2>Ingredients on hand:</h2>
     <ul className="ingredients-list" aria-live="polite">
-      {ingredientElements}
+      
     </ul>
       {ingredients.length > 3 && <div className="get-recipe-container">
         <div>
